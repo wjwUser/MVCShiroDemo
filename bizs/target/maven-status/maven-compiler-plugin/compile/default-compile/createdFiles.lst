@@ -1,0 +1,7 @@
+com\bizs\common\dao\ParentDAO.class
+com\bizs\manages\modle\serviceimpl\user\UserServiceImpl.class
+com\bizs\manages\modle\service\user\UserService.class
+com\bizs\manages\dao\user\UserDAO.class
+com\bizs\common\service\ServiceManage.class
+com\bizs\manages\pojo\UserEntity.class
+com\bizs\common\service\Services.class
