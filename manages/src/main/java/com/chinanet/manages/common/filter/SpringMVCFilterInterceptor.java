@@ -55,6 +55,8 @@ public class SpringMVCFilterInterceptor implements HandlerInterceptor {
 			}
 			//保存到session中
 			request.getSession().setAttribute("PermissionEntity", permissionEntity);
+			request.setAttribute("menuPid", permissionEntity.getPid());
+			request.setAttribute("menuId", permissionEntity.getId());
 		}
 		return true;
 	}

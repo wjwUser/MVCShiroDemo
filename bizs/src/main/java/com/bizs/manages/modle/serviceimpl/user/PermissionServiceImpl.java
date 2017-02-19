@@ -11,8 +11,14 @@ import com.bizs.common.service.ServiceManage;
 import com.bizs.common.util.tree.ZTreeUtils;
 import com.bizs.manages.dao.user.PermissionDAO;
 import com.bizs.manages.modle.service.user.PermissionService;
-import com.bizs.manages.pojo.MenuPOJO;
 import com.bizs.manages.pojo.PermissionEntity;
+/**
+ * 
+ * @ClassName: PermissionServiceImpl 
+ * @Description: 权限业务层
+ * @author: wjw
+ * @date: 2017年2月19日 上午11:26:17
+ */
 @Service
 public class PermissionServiceImpl extends ServiceManage<PermissionEntity,PermissionDAO> implements PermissionService{
 	
@@ -22,8 +28,10 @@ public class PermissionServiceImpl extends ServiceManage<PermissionEntity,Permis
 	public void setDao(PermissionDAO dao) {
 		this.dao=dao;
 	}
-
-	@Override
+	
+	/**
+	 * 构建Ztree的菜单导航栏
+	 */
 	public String selectMenu(HttpServletRequest request) {
 		PermissionEntity permissionEntity=new PermissionEntity();
 		permissionEntity.setType("1");

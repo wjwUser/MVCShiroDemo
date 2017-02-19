@@ -43,7 +43,7 @@
 		if(treeNod.url==null||$.trim(treeNod.url)==""){
 			return false;
 		}
-		window.location.href="${ctx}/menu/control.do?"+"id="+treeNod.id;
+		window.location.href="${ctx}/menu/control.menu?"+"id="+treeNod.id;
 		return true;
 	}
 	
@@ -71,7 +71,7 @@
 
 	$(document).ready(function() {
 		zTreeObj = $.fn.zTree.init($("#ZtreeContaint"), setting, zNodes);
-		ExpandNode("${menuId}");
+		ExpandNode("${menuPid}");
 	});
 </script>
 </html>

@@ -45,10 +45,10 @@
 	<mvc:default-servlet-handler />
 
 	<mvc:interceptors>
-		<bean class="com.chinanet.manages.common.filter.SpringAllInterceptor"/>
-		<!-- 菜单拦截 -->
+		<!-- <bean class="com.chinanet.manages.common.filter.SpringAllInterceptor"/>
+		 --><!-- 菜单拦截 -->
 		<mvc:interceptor>
-			<mvc:mapping path="/menu/control.do" />
+			<mvc:mapping path="/menu/control.menu" />
 			<!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->
 			<bean class="com.chinanet.manages.common.filter.SpringMVCFilterInterceptor" />
 		</mvc:interceptor>

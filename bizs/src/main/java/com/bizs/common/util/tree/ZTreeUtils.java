@@ -89,7 +89,8 @@ public class ZTreeUtils {
 			menuPOJO.setUrl(url.toString());
 			menuPOJO.setTarget("_self");
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("error---ZtreeUtils---error");
 		}
 		return menuPOJO;
 	}

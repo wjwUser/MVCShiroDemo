@@ -13,7 +13,12 @@
 <!-- easyUI -->
 <link rel="stylesheet" type="text/css" href="${ctx}/resource/jquery-easyui-1.5/themes/default/easyui.css">
 <link rel="stylesheet" type="text/css" href="${ctx}/resource/jquery-easyui-1.5/themes/icon.css">
-
+<!-- 调整jQgrid的margin下边距 -->
+<style type="text/css">
+	.ui-jqgrid-hdiv{
+		margin-bottom:-22px;
+	}
+</style>
 </head>
 <script type="text/javascript"
 	src="${ctx}/resource/bootstrap/js/jquery-1.9.1.min.js"></script>
@@ -55,7 +60,9 @@
 		<div class="col-md-2" style="height: 100%">
 			<jsp:include page="/jspview/common/ztree/ZtreeMenu.jsp"></jsp:include>
 		</div>
-
+		<div class="col-md-10" style="height: 100%;margin-bottom:-10px;">
+			<jsp:include page="/jspview/common/ztree/menuBranchcrumb.jsp"></jsp:include>
+		</div>
 		<div class="col-md-10">
 			<sitemesh:write property='body' />
 		</div>
